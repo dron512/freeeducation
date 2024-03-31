@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            height: 100vh;
+            background-color: #1acbf3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container
+        {
+            height: 90vh;
+            width: 350px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .form-control
+        {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .btn{
+            background-color: #1acbf3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let opa = document.getElementById('opa');
+            let alpha = document.getElementById('alpha');
+            let name = document.getElementById('name');
+            let password = document.getElementById('password');
+            let signIn = document.querySelector('.btn');
+            signIn.addEventListener('click', function(){
+                console.log(name.value);
+                console.log(password.value);
+                location.href = 'main.html';
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>할일 목록</h1>
+        <div id="opa" style="height: 150px;">
+        </div>
+        <div id="alpha">
+            <p>Welcome to my page</p>
+            <input type="text" name="email" id="name" class="form-control" placeholder="email">
+            <input type="text" name="password" id="password" class="form-control" placeholder="password">
+            <button class="form-control btn">signIn</button>
+            <button class="form-control btn">signUp</button>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

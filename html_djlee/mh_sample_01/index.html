@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .header,
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav ul li {
+            margin: 0 10px;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sub_content {
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            background-color: #e23c3c;
+        }
+
+        .right {
+            flex: 3;
+            padding: 10px;
+            margin: 10px;
+            background-color: #6ce40a;
+        }
+    </style>
+
+    <script type="module">
+        import { greet,goodbye } from './function.js';
+        greet('index.html');
+        goodbye('index.html');
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to My Website</h1>
+    <div class="container">
+        <div class="header">
+            <h2>Header</h2>
+
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quisquam ex ut nihil rem quas asperiores,
+                deleniti placeat fuga totam ab explicabo architecto optio, iure maxime velit neque. Quod, quis.</p>
+            <div class="sub_content">
+                <div class="left">
+                    <h3>Left</h3>
+                    <p>left Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur est eveniet facilis
+                        ut odio repudiandae nisi molestiae. Adipisci repellat dicta maxime temporibus nostrum veritatis
+                        fugit molestias, sint quod delectus.</p>
+                </div>
+                <div class="right">
+                    <h3>Right</h3>
+                    <img src="https://via.placeholder.com/300" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+
+</html>
